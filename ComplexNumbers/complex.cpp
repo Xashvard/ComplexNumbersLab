@@ -11,8 +11,7 @@ Complex::Complex(double r, double i)
 std::string Complex::pp()
 {
 	if (imag < 0) {
-		imag *= -1;
-		return std::to_string(real) + " - " + std::to_string(imag) + "i";
+		return std::to_string(real) + " - " + std::to_string(-imag) + "i";
 	}
 	else {
 		return std::to_string(real) + " + " + std::to_string(imag) + "i";
